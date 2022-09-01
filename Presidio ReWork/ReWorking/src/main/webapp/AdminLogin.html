@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Admin Login</title>
+
+</head>
+<center>
+	<body>
+	<form action="AdminCheck" method="post">
+		<div class="form" >
+			<h2 style ="font-size:50px">Car Spa</h2>
+			<input type="text" name="adminName" placeholder ="Name" style ="font-size:25px"> <input type="password"
+				name="adminPass" placeholder="Password"style ="font-size:25px">
+			<button class="btn" type="submit">Login</button>
+		</div>
+		</form>
+	</body>
+</html>
+<style>
+body {
+	background-image: url("AdminLoginImage2.jpg");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.form {
+	width: 250px;
+	height: 300px;
+	position: absolute;
+	top: 60px;
+	left: 500px;
+	border-radius: 10px;
+	text-align: center;
+	padding: 25px;
+	justify-content:center;
+}
+::placeholder{
+
+	color:white;
+	/* color:rgb(10, 10, 228); */
+}
+
+
+.form h2 {
+	width: 200px;
+	font-family: sans-serif;
+	text-align: center;
+	
+	color: white;
+	font-size: 22px;
+	border-radius: 10px;
+	margin: 20px;
+	padding: 8px;
+}
+
+.form input {
+	width: 240px;
+	height: 35px;
+	background: transparent;
+	font-size: 15px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	font-family: sans-serif;
+}
+
+.btn {
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	border: 3px solid blue;
+	background-color: transparent;
+	color: blue;
+	font-size: 1.5em;
+	box-shadow: 0 6px 6px rgba(0, 0, 0, 0, 0.8);
+	top: 250px;
+	left: 40px;
+	border-radius: 8px;
+	margin: 30px;
+}
+input{
+	color:white;
+}
+
+</style>

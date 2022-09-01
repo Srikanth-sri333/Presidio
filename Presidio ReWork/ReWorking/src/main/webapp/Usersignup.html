@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1 style="color:white;">Make Your Own Account</h1>
+        <a href ="Signin.jsp"><button class ="return">Back</button> </a>
+    </div>
+    <div class="message">
+        <div>
+    <h1>
+        Welcome To Our Site <span>Car Spa</span>
+    </h1>
+    </div>
+    <div>   
+         <h3 style ="margin-top: 40px ;color: blue;">
+             We Provide Best Car Restore and Cleaning Services
+        </h3>
+         
+    </div>
+    </div>
+
+    <form action="Register" method ="post">
+        
+        <div class="table">
+            <div>
+        <label for="name"><i class="input"></i></label> <input
+        type="text" name="name" id="name" placeholder="Your Name"required /><br></br>
+        </div>
+        <div>
+        <label for="pass"><i class="input"></i></label> <input
+        type="password" name="password" id="password" placeholder="Password"  required/><br></br>
+        </div>
+        <div>
+            <label for="email"><i class="input"></i></label> <input
+        type="email" name="email" id="email" placeholder="abc@gmail.com" required /><br></br>
+        </div>
+        <div>
+			<label for="contact"><i class="input"></i></label>
+			<input type="text" name="contact" id="contact" placeholder="Contact no" /> <br></br>
+			
+		</div>
+        <button class = "btn1"><b>Create</b></button>
+        
+    </div>
+        
+    </form>
+    
+
+
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .btn1{
+        margin-right: 25px;
+    }
+    body{
+        color: aqua;
+        font-family: sans-serif;
+        background-color: black;
+        justify-content: center;
+        width: 100%;
+    }
+   .return{
+   	height:45px;
+		width:90px;
+        color: white;
+        background-color: dodgerblue;
+        outline: none;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size:20px;
+   
+   
+   }
+    .message{
+        width: 250px;
+        margin-left: 50px;
+        height: 200px;
+        margin-top: 40px;
+        margin-right: 10px;
+        justify-content: space-between;
+    }
+    form{
+        border-radius: 6px;
+        
+         margin-top: -190px; 
+        width: 300px;
+        height: 300px;
+        padding-top: 2px;
+        margin-left: 400px; 
+        background-color: cadetblue;
+        justify-content: space-between;
+    }
+    .table{
+        margin-right: 50px;
+        justify-content: space-between;
+    }
+    input{
+        outline: none;
+        border: 1px solid skyblue;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-weight: bold;
+        height: 30px;
+        border-radius: 5px;
+        box-shadow: 5px 5px ;
+        font-size: 15px;
+        
+    }
+    ::placeholder{
+        font-size: 15px;
+        border: none;
+    }
+    form:hover{
+        box-shadow: 5px 5px 10px rgba(15, 12, 194, 0.425);
+        cursor: pointer; 
+    }
+    .btn1{
+        margin-left: 15px;
+        color: white;
+        background-color: rgb(10, 46, 248);
+        width: 90px;
+        height: 20px;
+       
+        border: 1px solid skyblue;
+        cursor: pointer;
+        font-size: 16px;
+        transition : 0.15s;
+        border-radius: 3px;
+        height: 35px;
+        transition: .4s ease-in-out;
+
+    }
+    .btn1:hover{
+        background-color: rgb(240, 240, 247);
+        color: black;
+
+        box-shadow: 2px 2px 2px   rgb(18, 134, 180);
+       
+    }
+    .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color:rgb(37, 16, 224);
+}
+.header h1 {
+	color: rgb(18, 128, 172);
+}
+</style>

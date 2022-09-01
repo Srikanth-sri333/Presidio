@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirm User</title>
+</head>
+<body>
+	<form action="AdminAccept" method="post">
+		<div class="table">
+			<div class="page_header">
+				<p>
+					<b style="font-size: 30px;">Final Update Accept</b>
+				</p>
+				<a href ="pendingData.jsp " style = "text-decoration: none;"><button class="button">Back</button></a>
+			</div>
+			<div class="first_block">
+				<p style="color: white; font-size: 20px;">Ensure The TicketId</p>
+				<input type="text" name="TicketId" class="input1">
+			</div>
+
+
+			<div class="second_block">
+				<p style="color: white; font-size: 20px">Your Comment</p>
+				<textarea name="comment" class="comment" cols="50" rows="7"
+					style="font-family: sans-serif; font-size: 20px;"></textarea>
+
+			</div>
+			<div>
+				<button class="confirm">Confirm</button>
+				<button class="cancel">Cancel</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: cadetblue;
+}
+
+.page_header {
+	margin-top: 0%;
+	padding: 20px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	background-color: rgb(240, 240, 240);
+}
+
+.table {
+	width: 100%;
+}
+
+.first_block, button {
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+.second_block {
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.input1 {
+	margin-top: 10px;
+	height: 30px;
+}
+
+.input2 {
+	margin-top: 10px;
+	height: 200px;
+	width: 70%;
+}
+
+button {
+	width: 70px;
+	height: 40px;
+	background-color: dodgerblue;
+	border: 1px solid white;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	margin-right: 20px;
+}
+
+.confirm:hover {
+	color: black;
+	background-color: rgb(12, 97, 131);
+}
+
+.cancel:hover {
+	background-color: rgb(248, 142, 104);
+}
+</style>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Add Places</title>
+</head>
+<body>
+   <div class="header">
+       <p>Add Places And Services</p>
+       <a href="AdminHome.html"><button class="btn1">Back</button></a>
+   </div>
+   <div>
+       <form action="AddPlace" method="post">
+           <div >
+               <p class="text">Add New Place</p> <input type="text" name="place" required>
+           </div>
+           <div>
+               <p class="text">Type Of Service </p>
+               <select name="service" required>
+                   <option value="Washing" name ="service">Washing</option>
+                   <option value="Car Service"  name ="service">Car Service</option>
+                   <option value="Include Both"  name ="service">Include Both</option>
+               </select>
+           </div>
+           <div><button class="btn2">Confirm Add</button></div>
+       </form>
+
+   </div>
+</body>
+</html>
+<style>
+   *{
+      margin: 0;
+      padding: 0; 
+   }
+   .header{
+       display: flex;
+       justify-content: space-between;
+       padding: 20px;
+       align-items: center;
+       background-color: rgba(24, 207, 152, 0.425);
+   }
+   .btn1{
+       padding: 10px 20px;
+       border-radius: 3px;
+       cursor: pointer;
+       background-color: rgb(25, 156, 117);
+       font-size: 15px;
+       border: none;
+   }
+   .btn2{
+    margin-top: 30px;
+    margin-left: 20px;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    outline: none;
+    border: 2px solid dodgerblue;
+    cursor: pointer;
+    background-color: aqua;
+    transition: .5s ease-in-out;
+   }
+   .btn2:hover{
+    color: white;
+    background-color: black;
+   }
+   p{
+       font-weight: bold;
+       font-size: 27px;
+   }
+   input{
+       height: 30px;
+       font-size: 15px;
+       font-weight: bold;
+       border-radius: 6px;
+       border-color: skyblue;
+       margin-left: 20px;
+       margin-bottom: 40px;
+       border: none;
+       outline: none;
+        
+   }
+   select{
+       width: 200px;
+       height: 30px;
+       font-size: 20px;
+       border-radius: 6px;
+       border-color: skyblue;
+       margin-left: 20px;
+       outline: none;
+   }
+   .text{
+       margin-left: 20px;
+       margin-bottom: 10px;
+   }
+   form{
+       width: 250px;
+       height: 260px;
+       background-color: dodgerblue;
+       border-radius: 6px;
+       border-color: rgb(19, 30, 187) ;
+       margin-top: 40px;
+       margin-left: 50px;
+   }
+   body{
+       justify-content: center;
+       background-image: url('UserLogin1.jpg');
+   }
+</style>

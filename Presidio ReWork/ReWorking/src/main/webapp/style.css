@@ -1,0 +1,117 @@
+@charset "ISO-8859-1";
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Times New Roman';
+	overflow: hidden;
+}
+
+.table {
+	width: 100%;
+}
+
+.table_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: rgb(240, 240, 240);
+}
+.table_header p {
+	color: black;
+}
+button {
+	outline: none;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+
+
+.Home {
+	padding: 10px 20px;
+	color: white;
+	background-color: dodgerblue;
+}
+
+.table_section {
+	height: 650px;
+	overflow: auto;
+}
+
+table {
+	width: 100%;
+	table-layout: fixed;
+	min-width: 1000px;
+	border-collapse: collapse;
+}
+
+thead th {
+	position: sticky;
+	top: 0;
+	background-color: whitesmoke;
+	color: #8493a5;
+	font-size: 15px;
+}
+
+th, td {
+	border-bottom: 1px solid #dddddd;
+	padding: 10px 10px;
+	word-break: break-all;
+	text-align: center;
+}
+td{
+	font-size:15px;
+	font-weight:bold;
+}
+
+tr {
+	color: #029Bcf;
+}
+
+td button:nth-child(1) {
+	font-size: 10px;
+	margin-right: 0px;
+	background-color: rgb(159, 159, 224);
+	height: 25px;
+	width: 40px;
+	cursor: pointer;
+}
+
+td button:nth-child(2) {
+	margin-left: px;
+	font-size: 10px;
+	background-color: rgb(243, 44, 44);
+	height: 25px;
+	width: 40px;
+	cursor: pointer;
+}
+
+tr:hover td {
+	color: black;
+	background-color: skyblue;
+	cursor: pointer;
+}
+
+input {
+	height: 30px;
+	font-size: large;
+	width: 180px;
+	color: #029Bcf;
+	border-style: hidden;
+	border-radius: 6px;
+	border-color: 1px solid blue;
+	margin-left: 10px;
+}
+
+::placeholder {
+	padding-left: 10px;
+}
